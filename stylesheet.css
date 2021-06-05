@@ -1,0 +1,57 @@
+body {
+    background-color:skyblue;
+}
+#block1{
+    background-color:red;
+    position:fixed ;
+    height:50px;
+    width:50px;
+    border:2px solid black;
+    
+}
+#block2{
+    background-color:blue;
+    position:fixed;
+    height:50px;
+    width:50px;
+    border:2px solid black;
+}
+#block3{
+    background-color:green;
+    position:fixed  ;
+    height:50px;
+    width:50px;
+    border:2px solid black;
+
+}
+#block4{
+    background-color:yellow;
+    position:fixed ;
+    height:50px;
+    width:50px;
+    border:2px solid black;
+    
+  }  
+#block1,#block2{
+animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+ 
+}
+#block3,#block4{
+animation-name: spin;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+ 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
